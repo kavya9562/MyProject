@@ -1,0 +1,37 @@
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
+ .gitattributes
+
+        README.md
+        artisan
+        bootstrap-5.3.0-alpha1-dist/
+        bootstrap/
+        composer.json
+        composer.lock
+        config/
+        database/
+        lang/
+        package.json
+        phpunit.xml
+        public/
+        resources/
+        routes/
+        storage/
+        tests/
+        vite.config.js
