@@ -29,32 +29,32 @@ class PostsController extends Controller
       $author=request('author');
       // $validatedData = $request->validate([
       //    'images' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
- 
+
       //   ]);
- 
+
       //   $name = $request->file('images')->getClientOriginalName();
- 
+
       //   $path = $request->file('images')->store('public/images');
 
       // Post::create([
       //    'title'=>$title,
       //    'description'=>$description,
-      //    'author'=>$author,  
+      //    'author'=>$author,
       //    'images' =>$path,
-      
-   
+
+
       // ]);
    //    Post::firstOrCreate([
    //       'title'=>request('title')
    //    ], ['description'=>$description,
-   //       'author'=>$author,  
+   //       'author'=>$author,
    //       //'images' =>$path,
    // ]);
       //return view('post.save');
       Post::updateOrCreate([
          'title'=>request('title')
       ], ['description'=>$description,
-         'author'=>$author,  
+         'author'=>$author,
          //'images' =>$path,
    ]);
       return view('post.save');
@@ -83,9 +83,9 @@ class PostsController extends Controller
       //   'description'=>request('description'),
       //   'author'=>request('author'),
       //   'image'=>request('image')
-   
+
    //    ]);
-     return redirect()->route('post.create')->with('message','Post Updated Successfully !!');   
+     return redirect()->route('post.create')->with('message','Post Updated Successfully !!');
 }
 public function delete($id){
    $post=Post::find(decrypt(request('id')));
@@ -108,7 +108,7 @@ public function forceDelete($id){
 public function myPosts(){
    //$post=Post::find(3);
     //$posts=Post::withTrashed()->find(5)->paginate(2);
-    $posts=Post::where('author',auth()->user()->name)->get()->take(6);
+    $posts=Post::where('author',auth()->user()->name)->get()->take(5);
     //var_dump($posts);exit;
    return view('post.my_posts',compact('posts'));
   }

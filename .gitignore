@@ -18,20 +18,3 @@ yarn-error.log
 /.vscode
  .gitattributes
 
-        README.md
-        artisan
-        bootstrap-5.3.0-alpha1-dist/
-        bootstrap/
-        composer.json
-        composer.lock
-        config/
-        database/
-        lang/
-        package.json
-        phpunit.xml
-        public/
-        resources/
-        routes/
-        storage/
-        tests/
-        vite.config.js
