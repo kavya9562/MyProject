@@ -8,7 +8,7 @@
 <table class="table .table-bordered">
   <thead>
     <tr>
-      <th scope="col">Author</th>
+      <th scope="col">Authors</th>
       <th scope="col">Title</th>
       <th scope="col">Description</th>
       <th scope="col">Image</th>
@@ -31,7 +31,7 @@
     </tr>
     </tr>
     @endforeach
-    
+
   </tbody>
 </table>
 
