@@ -9,7 +9,7 @@ class PostsController extends Controller
    public function index(){
     $post=Post::find(3);
      // return $post;
-     $post=Post::where('id','43')->get();
+     $post=Post::where('id','41')->get();
      //return $post[0]->title;
     // $posts=Post::withTrashed()->limit(10)->latest()->get();
      $posts=Post::withTrashed()->latest()->paginate(6);
